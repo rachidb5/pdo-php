@@ -1,6 +1,6 @@
 <?php
 
-$conn = new PDO('mysql:host=localhost;dbname=user', "root", "");   
+require "config.php";
 
 if ($_REQUEST['nome_cliente'] == "") {
     echo "O campo Nome não pode ficar vazio.";
